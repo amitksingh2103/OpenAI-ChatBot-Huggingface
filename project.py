@@ -5,7 +5,6 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
-####
 prompt=ChatPromptTemplate.from_messages([('system','You are an Helpful AI Assistant'),
 ('human','Question :{Question}')])
 
@@ -39,3 +38,4 @@ if st.button("Answer"):
     else:
 
         st.warning("Please Enter some Query")
+
